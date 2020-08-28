@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Scenic Plots, tell us a story"/>
+    <meta name="keywords" content="Scenic Plots, story, read"/>
+    <link rel="shortcut icon" href="./static/img/favicon.svg" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="./static/img/favicon.svg"/>
+    <title>Scenic Plots</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&amp;family=Fira+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./static/font/ionicons/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./static/DataTables-1.10.20/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="./static/css/main.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-custom row">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top col-11 col-sm-10 mx-auto" id="navbar"><a class="navbar-brand" href="./index.html"><img class="nav-img" src="./static/img/logo-icon.svg" alt="ScenicPlots"/></a>
+          <button class="navbar-toggler" data-target="#nav-top" data-toggle="collapse" aria-controls="nav-top" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="nav-top">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item px-2"><a class="nav-link" href="./index.html"><span>Home </span></a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="./my-profile.html"><span>My Profile</span></a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="./my-stories.html"><span>My Stories</span></a></li>
+              <li class="nav-item px-2 active"><a class="nav-link" href="./all-stories.html"><span>Genres</span><span class="sr-only">(current)</span></a></li>
+              <li class="nav-item px-2 text-center"><a class="nav-link btn btn-custom" href="./register.html"><span>Join now</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="banner min-vh--50">
+        <div class="banner_fillers-1"></div>
+        <div class="banner_fillers-2"></div>
+        <div class="banner_fillers-3"></div>
+        <div class="banner_fillers-4"></div>
+        <div class="banner_fillers-5"></div>
+        <div class="banner-content">
+          <div class="col-11 col-sm-10 col-md-8 col-lg-10 mx-auto">
+            <div class="row">
+              <div class="col-12">
+                <div class="banner-content_left">
+                  <div class="banner_title text-center">
+                    <h4 class="tag f-w--5 f-s--90">#Stories</h4>
+                    <h1 class="title">Join Story</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section class="section pt-5 px-sm-5">
+          <div class="section-content mx-auto">
+            <div class="section-title justify-content-center">
+              <div class="text-center"><small class="title_tag">#Stories</small>
+                <h3 class="title">Join Story</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-10 col-lg-8 mx-auto">
+              <div class="main-content pl-sm-4 pr-sm-4 pl-lg-0">
+                <section class="section my-5">
+                  <div class="section-content mx-auto">
+                    <h4 class="f-w--5 f-s--90 px-4 py-3 rounded mb-3 text-capitalize bg_color-secondary text-white">Join Naruto's story</h4>
+                    <div class="auth-form col-12 px-4 px-sm-5 pt-4 bg_color-white">
+                      <form class="form-horizontal" method="post" action="#">
+                        <div class="form-group mb-4">
+                          <label class="sr-only" for="story-title">Story Title</label>
+                          <input class="form-control" id="story-title" type="text" placeholder="Story Title"/>
+                        </div>
+                        <div class="form-group mb-4">
+                          <label class="sr-only" for="co-author-1">Co author 1 if any</label>
+                          <input class="form-control" id="co-author-1" type="text" placeholder="Co author 1 if any"/>
+                        </div>
+                        <div class="form-group mb-4">
+                          <label class="sr-only" for="co-author-2">Co author 2 if any</label>
+                          <input class="form-control" id="co-author-2" type="text" placeholder="Co author 2 if any"/>
+                        </div>
+                        <div class="form-group mb-4">
+                          <label class="sr-only" for="lead-char">Lead Character</label>
+                          <input class="form-control" id="lead-char" type="text" placeholder="Lead Character"/>
+                        </div>
+                        <div class="form-group mb-4">
+                          <label class="sr-only" for="location">Location</label>
+                          <input class="form-control" id="location" type="text" placeholder="Location"/>
+                        </div>
+                        <div class="form-group mb-4">
+                          <label class="sr-only" for="genre">genre</label>
+                          <select class="custom-select form-control" id="genre" multiple="">
+                            <option selected="" disabled="">Select Genre(s):</option>
+                            <option value="1">Romance</option>
+                            <option value="2">Thriller</option>
+                            <option value="3">Horror</option>
+                          </select>
+                        </div>
+                        <div class="form-group mb-4">
+                          <div class="custom-file">
+                            <input class="custom-file-input" id="story-image" type="file" accept=".jpg,.jpeg,.png,.gif"/>
+                            <label class="custom-file-label" for="story-image">Choose story image</label>
+                          </div>
+                        </div>
+                        <div class="form-group mb-4">
+                          <button class="btn d-block f-w--5 text_color-primary d-flex align-items-center bg_color-secondary text-white show-modal" data-toggle="modal" data-target="#tag-writer" type="button"><i class="icon ion-ios-pricetag f-s--lg"></i><span>Tag writer(s)</span></button>
+                        </div>
+                        <div class="form-group mb-3 text-center"><a class="btn btn-primary f-w--5 py-3 px-5" href="./story-editor.html">Next</a></div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-content container-fluid">
+          <div class="footer-contact">
+            <div class="row align-items-center">
+              <div class="message col-12 col-sm-6 mb-3 mb-sm-0">
+                <h5 class="tag">#Contact</h5>
+                <h3 class="title">Want to get in touch? Leave us a message</h3>
+              </div>
+              <div class="form col-12 col-sm-6">
+                <form method="post" action="#">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <input class="form-control py-4" id="fullname" type="text" placeholder="Name"/>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <input class="form-control py-4" id="email" type="email" placeholder="Email"/>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button class="btn btn-primary btn-lg" type="submit"><i class="icon ion-ios-paper-plane icon-lg mr-2"></i><span>Send</span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-foot row align-items-center col-12 col-md-10 col-lg-10 mx-auto">
+            <h3 class="logo col-12 col-sm-6 mb-0 col-md-4 col-xl-3 pr-sm-2">ScenicPlots</h3>
+            <p class="credit col-12 col-sm-6 col-md-8 col-xl-9 mb-0">Copyright &copy; 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade p-3" id="tag-writer" tabindex="-1" role="dialog" aria-labelledby="tag writers" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg_color-secondary text-white">
+              <h5 class="modal-title f-w--7 f-cormorant" id="tag writers">Tag Writer(s)</h5>
+              <button class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body py-1 max-vh--70 overflow-y-auto">
+              <div class="form-group">
+                <label class="sr-only" for="search-writer">Search writer...</label>
+                <input class="form-control" id="search-writer" type="text" placeholder="Search writer..."/>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item py-1 pl-0">
+                  <div class="custom-control custom-control-inline custom-checkbox d-flex align-items-center">
+                    <input class="custom-control-input" id="writer-1" type="checkbox" name="tag-writer" value="Romes"/>
+                    <label class="custom-control-label center-checkmark" for="writer-1">
+                      <div class="d-flex justify-content-start align-items-center flex-nowrap"><img class="tagged-user-img mr-2" src="./static/img/assassin.jpg" alt="User"/><span class="f-s--90">Romes FrontBound</span></div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item py-1 pl-0">
+                  <div class="custom-control custom-control-inline custom-checkbox">
+                    <input class="custom-control-input" id="writer-2" type="checkbox" name="tag-writer" value="Uzumaki"/>
+                    <label class="custom-control-label center-checkmark" for="writer-2">
+                      <div class="d-flex justify-content-start align-items-center flex-nowrap"><img class="tagged-user-img mr-2" src="./static/img/naruto.jpg" alt="User"/><span class="f-s--90">Romes FrontBound</span></div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item py-1 pl-0">
+                  <div class="custom-control custom-control-inline custom-checkbox">
+                    <input class="custom-control-input" id="writer-3" type="checkbox" name="tag-writer" value="Uchiha"/>
+                    <label class="custom-control-label center-checkmark" for="writer-3">
+                      <div class="d-flex justify-content-start align-items-center flex-nowrap"><img class="tagged-user-img mr-2" src="./static/img/assassin.jpg" alt="User"/><span class="f-s--90">Romes FrontBound</span></div>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer bg_color-secondary text-white">
+              <button class="btn btn-primary btn-sm" type="button" data-dismiss="modal">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./static/js/jquery-3.5.1.slim.min.js"></script>
+<script src="./static/js/popper.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<script src="./static/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="./static/DataTables-1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="./static/ckeditor/ckeditor.js"></script>
+<script src="./static/js/main.min.js"></script>

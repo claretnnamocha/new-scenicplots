@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Scenic Plots, tell us a story"/>
+    <meta name="keywords" content="Scenic Plots, story, read"/>
+    <link rel="shortcut icon" href="./static/img/favicon.svg" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="./static/img/favicon.svg"/>
+    <title>Scenic Plots</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&amp;family=Fira+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./static/font/ionicons/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./static/DataTables-1.10.20/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="./static/css/main.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-custom row">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top col-11 col-sm-10 mx-auto" id="navbar"><a class="navbar-brand" href="./index.html"><img class="nav-img" src="./static/img/logo-icon.svg" alt="ScenicPlots"/></a>
+          <button class="navbar-toggler" data-target="#nav-top" data-toggle="collapse" aria-controls="nav-top" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="nav-top">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item px-2"><a class="nav-link" href="./index.html"><span>Home </span></a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="./my-profile.html"><span>My Profile</span></a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="./my-stories.html"><span>My Stories</span></a></li>
+              <li class="nav-item px-2 active"><a class="nav-link" href="./all-stories.html"><span>Genres</span><span class="sr-only">(current)</span></a></li>
+              <li class="nav-item px-2 text-center"><a class="nav-link btn btn-custom" href="./register.html"><span>Join now</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="banner min-vh--50">
+        <div class="banner_fillers-1"></div>
+        <div class="banner_fillers-2"></div>
+        <div class="banner_fillers-3"></div>
+        <div class="banner_fillers-4"></div>
+        <div class="banner_fillers-5"></div>
+        <div class="banner-content">
+          <div class="col-11 col-sm-10 col-md-8 col-lg-10 mx-auto">
+            <div class="row">
+              <div class="col-12">
+                <div class="banner-content_left">
+                  <div class="banner_title text-center">
+                    <h4 class="tag f-w--5 f-s--90">#Stories</h4>
+                    <h1 class="title">Stories</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section class="section pt-5 px-sm-5">
+          <div class="section-content mx-auto">
+            <div class="section-title justify-content-center">
+              <div class="text-center"><small class="title_tag">#Stories</small>
+                <h3 class="title">Stories</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <div class="side_menu pl-sm-4 py-5">
+                <div class="side_menu-content py-4">
+                  <div class="card mb-3 side_menu-item search-form border-0">
+                    <form class="form-inline flex-wrap flex-sm-nowrap justify-content-center align-items-center" action="#" method="POST">
+                      <input class="form-control col-9 h-100" type="search" placeholder="Looking for..." aria-label="Search"/>
+                      <button class="btn btn-primary my-2 my-sm-0 bg_color-primary f-w--5 col-3" type="submit"><i class="icon ion-ios-search f-s--lg"></i></button>
+                    </form>
+                  </div>
+                  <div class="card mb-3 side_menu-item shadow-sm filters">
+                    <div class="card-header f-w--5">Filter by genre</div>
+                    <div class="card-body">
+                      <div class="list-group f-s--90">
+                        <button class="list-group-item list-group-item-action active" type="button">All</button>
+                        <button class="list-group-item list-group-item-action" type="button">Romantic</button>
+                        <button class="list-group-item list-group-item-action" type="button">Horror</button>
+                        <button class="list-group-item list-group-item-action" type="button">Triller</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="main-content pl-sm-4 pr-sm-4 pl-lg-0">
+                <section class="section py-5 px-2">
+                  <div class="section-content mx-auto py-4">
+                    <h4 class="f-w--5 f-s--90 px-4 py-3 rounded mb-3 text-capitalize bg_color-secondary text-white">Stories by 'Romes'</h4>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 row-cols-xl-3">
+                      <div class="col story_card mb-4">
+                        <div class="card h-100">
+                          <div class="scale-img"><img class="card-img-top" src="./static/img/assassin.jpg" alt="#latest story" loading="lazy"/>
+                            <div class="joiners bg-primary f-w--5 f-s--90 text-white px-2 py-1"><i class="icon ion-ios-people mr-1"></i><span class="f-s--80">241</span></div>
+                            <div class="rating bg-primary f-w--5 f-s--90 text-white px-2 py-1"><i class="icon ion-ios-star mr-1"></i><span class="f-s--80">5.6</span></div>
+                          </div>
+                          <div class="card-body p-4">
+                            <div class="card-tags d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap mb-1">
+                              <div class="author mr-2" title="Author"><i class="icon ion-ios-person mr-2"></i><a class="link" href="./author-profile.html">Romes</a></div>
+                              <div class="date" title="Date published"><i class="icon ion-ios-calendar mr-2"></i><span>24, July 2020</span></div>
+                            </div>
+                            <div class="card-tags d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap mb-3">
+                              <div class="author" title="Co-Authors"><i class="icon ion-ios-contacts mr-2"></i><a class="link f-s--90" href="./author-profile.html">Jack Sparrow</a><span class="mx-1 f-w--3">|</span><a class="link f-s--90" href="./author-profile.html">Ezio Kil la kil</a></div>
+                            </div>
+                            <h5 class="card-title mb-2"> Assassin: Blade of Severence</h5>
+                            <div class="card-tags d-flex justify-content-start align-items-center flex-wrap mb-3">
+                              <div class="tag">Horror</div>
+                              <div class="tag">Triller</div>
+                              <div class="tag">Romance</div>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam? Earum excepturi officiis soluta blanditiis numquam et nostrum.</p><a class="card-link" href="./read-story.html"><span class="read-more">Continue reading</span><i class="icon ion-ios-arrow-round-forward"></i></a>
+                            <div class="browse-all text-center mt-2"><a class="btn btn-outline-primary btn-browse d-flex align-items-center justify-content-center mx-auto py-1" href="./join-story.html"><i class="icon ion-md-pie icon-xl"></i><span class="f-s--90">Join Story</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col story_card mb-4">
+                        <div class="card h-100">
+                          <div class="scale-img"><img class="card-img-top" src="./static/img/assassin.jpg" alt="#latest story" loading="lazy"/>
+                            <div class="joiners bg-primary f-w--5 f-s--90 text-white px-2 py-1"><i class="icon ion-ios-people mr-1"></i><span class="f-s--80">241</span></div>
+                            <div class="rating bg-primary f-w--5 f-s--90 text-white px-2 py-1"><i class="icon ion-ios-star mr-1"></i><span class="f-s--80">5.6</span></div>
+                          </div>
+                          <div class="card-body p-4">
+                            <div class="card-tags d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap mb-1">
+                              <div class="author mr-2" title="Author"><i class="icon ion-ios-person mr-2"></i><a class="link" href="./author-profile.html">Romes</a></div>
+                              <div class="date" title="Date published"><i class="icon ion-ios-calendar mr-2"></i><span>24, July 2020</span></div>
+                            </div>
+                            <div class="card-tags d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap mb-3">
+                              <div class="author" title="Co-Authors"><i class="icon ion-ios-contacts mr-2"></i><a class="link f-s--90" href="./author-profile.html">Jack Sparrow</a><span class="mx-1 f-w--3">|</span><a class="link f-s--90" href="./author-profile.html">Ezio Kil la kil</a></div>
+                            </div>
+                            <h5 class="card-title mb-2"> Assassin: Blade of Severence</h5>
+                            <div class="card-tags d-flex justify-content-start align-items-center flex-wrap mb-3">
+                              <div class="tag">Horror</div>
+                              <div class="tag">Triller</div>
+                              <div class="tag">Romance</div>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam? Earum excepturi officiis soluta blanditiis numquam et nostrum.</p><a class="card-link" href="./read-story.html"><span class="read-more">Continue reading</span><i class="icon ion-ios-arrow-round-forward"></i></a>
+                            <div class="browse-all text-center mt-2"><a class="btn btn-outline-primary btn-browse d-flex align-items-center justify-content-center mx-auto py-1" href="./join-story.html"><i class="icon ion-md-pie icon-xl"></i><span class="f-s--90">Join Story</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col story_card mb-4">
+                        <div class="card h-100">
+                          <div class="scale-img"><img class="card-img-top" src="./static/img/assassin.jpg" alt="#latest story" loading="lazy"/>
+                            <div class="joiners bg-primary f-w--5 f-s--90 text-white px-2 py-1"><i class="icon ion-ios-people mr-1"></i><span class="f-s--80">241</span></div>
+                            <div class="rating bg-primary f-w--5 f-s--90 text-white px-2 py-1"><i class="icon ion-ios-star mr-1"></i><span class="f-s--80">5.6</span></div>
+                          </div>
+                          <div class="card-body p-4">
+                            <div class="card-tags d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap mb-1">
+                              <div class="author mr-2" title="Author"><i class="icon ion-ios-person mr-2"></i><a class="link" href="./author-profile.html">Romes</a></div>
+                              <div class="date" title="Date published"><i class="icon ion-ios-calendar mr-2"></i><span>24, July 2020</span></div>
+                            </div>
+                            <div class="card-tags d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap mb-3">
+                              <div class="author" title="Co-Authors"><i class="icon ion-ios-contacts mr-2"></i><a class="link f-s--90" href="./author-profile.html">Jack Sparrow</a><span class="mx-1 f-w--3">|</span><a class="link f-s--90" href="./author-profile.html">Ezio Kil la kil</a></div>
+                            </div>
+                            <h5 class="card-title mb-2"> Assassin: Blade of Severence</h5>
+                            <div class="card-tags d-flex justify-content-start align-items-center flex-wrap mb-3">
+                              <div class="tag">Horror</div>
+                              <div class="tag">Triller</div>
+                              <div class="tag">Romance</div>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam? Earum excepturi officiis soluta blanditiis numquam et nostrum.</p><a class="card-link" href="./read-story.html"><span class="read-more">Continue reading</span><i class="icon ion-ios-arrow-round-forward"></i></a>
+                            <div class="browse-all text-center mt-2"><a class="btn btn-outline-primary btn-browse d-flex align-items-center justify-content-center mx-auto py-1" href="./join-story.html"><i class="icon ion-md-pie icon-xl"></i><span class="f-s--90">Join Story</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="browse-all text-center py-5">
+                    <button class="btn btn-outline-primary btn-browse d-flex align-items-center justify-content-center mx-auto" type="button"><span>Load More...</span></button>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-content container-fluid">
+          <div class="footer-contact">
+            <div class="row align-items-center">
+              <div class="message col-12 col-sm-6 mb-3 mb-sm-0">
+                <h5 class="tag">#Contact</h5>
+                <h3 class="title">Want to get in touch? Leave us a message</h3>
+              </div>
+              <div class="form col-12 col-sm-6">
+                <form method="post" action="#">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <input class="form-control py-4" id="fullname" type="text" placeholder="Name"/>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <input class="form-control py-4" id="email" type="email" placeholder="Email"/>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button class="btn btn-primary btn-lg" type="submit"><i class="icon ion-ios-paper-plane icon-lg mr-2"></i><span>Send</span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-foot row align-items-center col-12 col-md-10 col-lg-10 mx-auto">
+            <h3 class="logo col-12 col-sm-6 mb-0 col-md-4 col-xl-3 pr-sm-2">ScenicPlots</h3>
+            <p class="credit col-12 col-sm-6 col-md-8 col-xl-9 mb-0">Copyright &copy; 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<script src="./static/js/jquery-3.5.1.slim.min.js"></script>
+<script src="./static/js/popper.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<script src="./static/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="./static/DataTables-1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="./static/ckeditor/ckeditor.js"></script>
+<script src="./static/js/main.min.js"></script>
